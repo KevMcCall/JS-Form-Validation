@@ -20,11 +20,12 @@
             <h1>Application Form</h1>
             
         </div>
+        <form id="formapp" name="contactForm" onsubmit="return validateForm()" action="" method="get">
         <div class="form">
-            <input placeholder='Name' type="text">
-            <input placeholder='Email' type="text">
-            <input placeholder='Mobile Number' type="text">
-            <input placeholder='Password' type="text">
+            <input placeholder='Name' type="text" name="name">
+            <input placeholder='Email' type="text" name="email">
+            <input placeholder='Mobile Number' type="text" name="mobile">
+            <input placeholder='Password' type="text" name="password">
             <select class="ctry" name="country">
                 <option>Select</option>
                 <option>Canada</option>
@@ -35,7 +36,7 @@
             <div class="submit">Submit</div>
         </div>
     </div>
-
+    </form>
 
 
 <script src="app.js"></script>
