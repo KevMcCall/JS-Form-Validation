@@ -1,11 +1,8 @@
 html {
-  background: url("images/patrick-boucher-oHHph_yeMq8-unsplash.jpg") no-repeat
-    center fixed;
+  background: url("images/patrick-boucher-oHHph_yeMq8-unsplash.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +15,10 @@ body {
   height: 100%;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 .panel {
   width: 400px;
   height: 500px;
@@ -27,12 +28,17 @@ body {
   text-align: center;
 }
 .panel .state {
-  margin-top: 5px;
+  margin-top: 4px;
   width: 100%;
-  height: 155px;
-  color: white;
+  height: 140px;
+  color: #a2d4df;
   font-size: 20px;
 }
+
+.state {
+    font-family: 'Cinzel', serif;
+}
+
 .panel .state i.fa-ban {
   font-size: 40px;
 }
@@ -52,11 +58,12 @@ body {
   width: 340px;
   margin: 5px auto;
 }
+
+
 .panel .login {
   height: 45px;
   width: 100%;
-  background-color: #8bc34a;
-
+  background-color: #DBA159;
   border-radius: 45px;
   position: relative;
   line-height: 45px;
@@ -71,23 +78,7 @@ body {
 .panel .login:hover {
   background-color: #599b2d;
 }
-.panel .login:after {
-  content: "\f084";
-  font-family: "FontAwesome";
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  background-color: #599b2d;
-  color: #fff;
-  text-shadow: 1px -1px #467a23, 2px -2px #487d24, 3px -3px #4a8025,
-    4px -4px #4b8326, 5px -5px #4d8627, 6px -6px #4f8928, 7px -7px #508c28,
-    8px -8px #528f29, 9px -9px #54922a, 10px -10px #55952b, 11px -11px #57982c;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 45px;
-}
+
 .panel input[type="text"] {
   background-color: #22232a;
   border-radius: 45px;
@@ -95,15 +86,28 @@ body {
   height: 45px;
   border: none;
   padding-left: 15px;
-  width: -webkit-calc(100% - 15px);
-  width: -moz-calc(100% - 15px);
   width: calc(100% - 15px);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
+
 .panel input[type="text"][placeholder] {
   color: #656d79;
   font-size: 15px;
   font-weight: 500;
+}
+
+select {
+  color: #656d79;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #22232a;
+  border-radius: 45px;
+  font-size: 15px;
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .panel .fack {
   margin-top: 30px;

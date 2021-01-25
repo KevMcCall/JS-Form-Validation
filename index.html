@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <title>JS Validation Form</title>
 
 </head>
@@ -15,18 +17,28 @@
 
     <div class="panel">
         <div class="state"><br>
-            <h1>Application Form</h1>
+            <h1>Application</h1>
+            <h2>Form</h1>
         </div>
         <div class="form">
+            <input placeholder='Name' type="text">
             <input placeholder='Email' type="text">
+            <input placeholder='Mobile Number' type="text">
             <input placeholder='Password' type="text">
+            <select class="ctry" name="country">
+                <option>Select</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+                <option>United States</option>
+                <option>Greenland</option>
+              </select>
             <div class="login">Login</div>
         </div>
     </div>
 
 
 
-    <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
