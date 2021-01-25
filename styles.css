@@ -32,7 +32,7 @@ body {
   width: 100%;
   height: 140px;
   color: #a2d4df;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .state {
@@ -59,8 +59,7 @@ body {
   margin: 5px auto;
 }
 
-
-.panel .login {
+.panel .submit {
   height: 45px;
   width: 100%;
   background-color: #DBA159;
@@ -75,8 +74,8 @@ body {
 }
 
 
-.panel .login:hover {
-  background-color: #599b2d;
+.panel .submit:hover {
+  background-color: #a2d4df;
 }
 
 .panel input[type="text"] {
@@ -108,6 +107,7 @@ select {
   padding-left: 15px;
   width: 100%;
   margin-bottom: 10px;
+  outline: none;
 }
 .panel .fack {
   margin-top: 30px;
