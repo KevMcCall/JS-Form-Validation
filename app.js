@@ -58,7 +58,7 @@ function validateForm() {
         }
     }
 
-    // Validate Password //  Password (UpperCase, LowerCase, Number/SpecialChar and min 8 Chars)
+    // Validate Password //  Password (UpperCase, LowerCase, Number and min 8 Chars)
     if(password == "") {
         printError("passwordErr", "Please enter your password");
     } else {
@@ -80,11 +80,11 @@ function validateForm() {
     }
 
     // Changes Color Of Regex Error Message //
-    document.getElementById("nameErr").style.color = "white";
-    document.getElementById("emailErr").style.color = "white";
+    document.getElementById("nameErr").style.color = "red";
+    document.getElementById("emailErr").style.color = "red";
     document.getElementById("mobileErr").style.color = "red";
     document.getElementById("passwordErr").style.color = "red";
-    document.getElementById("countryErr").style.color = "white";
+    document.getElementById("countryErr").style.color = "red";
 
     
  
