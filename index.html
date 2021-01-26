@@ -16,22 +16,35 @@
 <body>
 
     <div class="panel">
-        <div class="state"><br>
-            <h1>Application Form</h1>
-            
-        </div>
-        <form id="formapp" name="contactForm" onsubmit="return validateForm()" action="" method="get">
+        
+
+        <form id="app" name="appForm" onsubmit="return validateForm()" action="" method="get">
+            <div class="state"><br>
+            <h1>Application Form</h1> 
+            </div>
         <div class="form">
+            <!-- Name Input -->
+            <div class="error"></div>
+            <div id="nameErr"></div>
             <input placeholder='Name' type="text" name="name">
-            <div class="error" id="nameErr"></div>
-            
-            <input placeholder='Email' type="text" name="email">
+
+            <!-- Email Input -->
             <div class="error" id="emailErr"></div>
+            <input placeholder='Email' type="text" name="email">
             
-            <input placeholder='Mobile Number' type="text" name="mobile">
+
+            <!-- Mobile Number Input -->
             <div class="error" id="mobileErr"></div>
+            <input placeholder='Mobile Number' type="text" name="mobile">
             
+
+            <!-- Password Input -->
+            <div class="error" id="passwordErr"></div>
             <input placeholder='Password' type="text" name="password">
+            
+
+            <!-- Country Select -->
+            <div class="error" id="countryErr"></div>
             <select class="ctry" name="country">
                 <option>Select</option>
                 <option>Canada</option>
@@ -39,8 +52,10 @@
                 <option>United States</option>
                 <option>Greenland</option>
               </select>
-              <div class="error" id="countryErr"></div>
-            <div class="submit">Submit</div>
+              
+
+            <!-- Submit Button -->
+            <input class="submit" type="submit" value="Submit">
         </div>
     </div>
     </form>

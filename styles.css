@@ -7,9 +7,12 @@ html {
   padding: 0;
   margin: 0;
 }
-input {
+input, select {
   outline: none;
+  margin-top:8;
 }
+
+
 html,
 body {
   height: 100%;
@@ -21,22 +24,24 @@ body {
 
 .panel {
   width: 400px;
-  height: 500px;
+  height: 580px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.5);
-  margin: 100px auto;
+  margin: 50px auto;
   text-align: center;
+  
 }
 .panel .state {
   margin-top: 4px;
   width: 100%;
-  height: 140px;
+  height: 100px;
   color: #a2d4df;
   font-size: 19px;
 }
 
 .state {
     font-family: 'Cinzel', serif;
+    margin-bottom: -20px;
 }
 
 .panel .state i.fa-ban {
@@ -57,6 +62,11 @@ body {
 .panel .form {
   width: 340px;
   margin: 5px auto;
+}
+
+form {
+    margin-bottom: 20px;
+    
 }
 
 .panel .submit {
@@ -107,7 +117,7 @@ select {
   padding-left: 15px;
   width: 100%;
   margin-bottom: 10px;
-  outline: none;
+  
 }
 .panel .fack {
   margin-top: 30px;
@@ -125,4 +135,8 @@ select {
 }
 .panel .fack a:visited {
   color: #555c65;
+}
+
+#error {
+    color: white;
 }
