@@ -9,7 +9,7 @@ function validateForm() {
     var name = document.appForm.name.value;
     var email = document.appForm.email.value;
     var mobile = document.appForm.mobile.value;
-    var password = document.appForm.password.vlaue;
+    var password = document.appForm.password.value;
     var country = document.appForm.country.value;
     
     
@@ -62,9 +62,9 @@ function validateForm() {
     if(password == "") {
         printError("passwordErr", "Please enter your password");
     } else {
-        var regex = /^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;                
+        var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;                
         if(regex.test(password) === false) {
-            printError("passwordErr", "Password must be at least 8 characters long" + "<br>" + "one uppercase, one lowercase, one number" + "<br>" + "and one special number");
+            printError("passwordErr", "Password must be at least 8 characters long" + "<br>" + "contain one uppercase, one lowercase" + "<br>" + " and one number");
         } else {
             printError("passwordErr", "");
             passwordErr = false;

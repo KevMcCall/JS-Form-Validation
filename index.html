@@ -18,7 +18,7 @@
     <div class="panel">
         
 
-        <form id="app" name="appForm" onsubmit="return validateForm()" action="" method="get">
+        <form id="form" name="appForm" onsubmit="return validateForm()" action="" method="get">
             <div class="state"><br>
             <h1>Application Form</h1> 
             </div>
@@ -40,7 +40,7 @@
 
             <!-- Password Input -->
             <div class="error" id="passwordErr"></div>
-            <input placeholder='Password' type="text" name="password">
+            <input placeholder='Password' type="password" name="password">
             
 
             <!-- Country Select -->
@@ -55,11 +55,11 @@
               
 
             <!-- Submit Button -->
-            <input class="submit" type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submit" >
         </div>
-    </div>
+    
     </form>
-
+</div>
 
 <script src="app.js"></script>
 </body>

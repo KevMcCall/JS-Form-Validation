@@ -10,8 +10,8 @@ html {
 input, select {
   outline: none;
   margin-top:8;
+  
 }
-
 
 html,
 body {
@@ -88,7 +88,7 @@ form {
   background-color: #a2d4df;
 }
 
-.panel input[type="text"] {
+.panel input[type="text"],[type="password"] {
   background-color: #22232a;
   border-radius: 45px;
   font-size: 15px;
@@ -99,7 +99,7 @@ form {
   margin-bottom: 13px;
 }
 
-.panel input[type="text"][placeholder] {
+.panel input[type="text"],[type="password"][placeholder] {
   color: #656d79;
   font-size: 15px;
   font-weight: 500;
@@ -117,6 +117,7 @@ select {
   padding-left: 15px;
   width: 100%;
   margin-bottom: 10px;
+  
   
 }
 .panel .fack {
@@ -137,6 +138,6 @@ select {
   color: #555c65;
 }
 
-#error {
+.error {
     color: white;
 }
